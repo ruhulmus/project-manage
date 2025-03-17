@@ -1,8 +1,8 @@
-# Looop-denki Web System Replacement
+#  Web System Replacement
 ## Project Plan Chart & Timeline
 
 ### Project Overview
-- **Project Name**: Looop-denki Web System Replacement
+- **Project Name**:  Web System Replacement
 - **Project Duration**: 12 months (52 weeks)
 - **Project Budget**: Under $100,000 USD
 - **Project Manager**: [PM Name]
