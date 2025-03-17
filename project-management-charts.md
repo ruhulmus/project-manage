@@ -41,7 +41,7 @@
 ## 2. Work Breakdown Structure (WBS)
 
 ```
-Looop-denki Web System Replacement
+ Web System Replacement
 │
 ├── 1.0 Project Management
 │   ├── 1.1 Project Planning
