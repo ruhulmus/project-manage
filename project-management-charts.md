@@ -1,4 +1,4 @@
-# Project Management Charts & Tools for Looop-denki Web System Replacement
+# Project Management Charts & Tools for  Web System Replacement
 
 ## 1. Gantt Chart
 
