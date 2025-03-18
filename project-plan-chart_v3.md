@@ -1,5 +1,5 @@
 # Web System Replacement
-## Project Plan Chart & Timeline (Updated)
+## Project Plan Chart & Timeline
 
 ### Project Overview
 - **Project Name**: Web System Replacement
@@ -9,8 +9,6 @@
 - **Project Sponsor**: [Sponsor Name]
 - **Project Management Methodology**: Agile with Scrum (2-week sprints)
 - **Project Management Tool**: Jira Software
-- **Security Framework**: Security Champion Workbook
-- **Architecture Framework**: AWS Well-Architected Framework
 
 ---
 
@@ -38,44 +36,33 @@
 │ Contingency   │    │    │    │    │    │    │    │    │    │    │    │████│Not Started│
 ├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
 │ Project Mgmt  │████│████│████│████│████│████│████│████│████│████│████│████│Not Started│
-├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
-│ Security Stds │████│████│████│████│████│████│████│████│████│████│████│    │Not Started│
-├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
-│ AWS Well-Arch │████│████│████│████│████│████│████│████│████│████│    │    │Not Started│
 └───────────────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴───────────┘
 ```
 
-**Note**: 
-- Testing runs parallel to development starting in Month 4, following our Agile sprint approach.
-- Security Workbook implementation runs from project start through handover phase.
-- AWS Well-Architected Framework review checkpoints occur throughout the project lifecycle.
+**Note**: Testing runs parallel to development starting in Month 4, as we follow an Agile sprint approach where each sprint includes development and testing phases.
 
-## 2. Key Milestones (Updated)
+## 2. Key Milestones
 
 | ID | Milestone | Target Date | Status | Dependencies |
 |----|-----------|-------------|--------|--------------|
 | M1 | Project Kickoff | Week 1 | Not Started | Contract signing |
 | M2 | Requirements Approval | Week 4 | Not Started | M1 |
-| M3 | Security Workbook Initial Assessment | Week 4 | Not Started | M1 |
-| M4 | AWS Well-Architected Initial Review | Week 6 | Not Started | M2 |
-| M5 | Design Approval | Week 8 | Not Started | M2, M3, M4 |
-| M6 | Sprint 1 Complete | Week 10 | Not Started | M5 |
-| M7 | Sprint 3 Complete | Week 14 | Not Started | M6 |
-| M8 | AWS Well-Architected Mid-Project Review | Week 20 | Not Started | M7 |
-| M9 | Security Workbook Mid-Project Assessment | Week 20 | Not Started | M7 |
-| M10 | Sprint 6 Complete | Week 20 | Not Started | M7 |
-| M11 | Development Complete | Week 30 | Not Started | M10 |
-| M12 | System Testing Complete | Week 34 | Not Started | M11 |
-| M13 | AWS Well-Architected Pre-Deployment Review | Week 38 | Not Started | M12 |
-| M14 | Security Workbook Final Assessment | Week 38 | Not Started | M12 |
-| M15 | Production Deployment | Week 40 | Not Started | M12, M13, M14 |
-| M16 | User Training Complete | Week 44 | Not Started | M15 |
-| M17 | Project Closure | Week 48 | Not Started | M16 |
-| M18 | Contingency Buffer End | Week 52 | Not Started | - |
+| M3 | Design Approval | Week 8 | Not Started | M2 |
+| M4 | Sprint 1 Complete | Week 10 | Not Started | M3 |
+| M5 | Sprint 3 Complete | Week 14 | Not Started | M4 |
+| M6 | AWS Well-Architected Review | Week 16 | Not Started | M5 |
+| M7 | Sprint 6 Complete | Week 20 | Not Started | M5 |
+| M8 | Development Complete | Week 30 | Not Started | M7 |
+| M9 | System Testing Complete | Week 34 | Not Started | M8 |
+| M10 | Security Standards Compliance Verification | Week 36 | Not Started | M9 |
+| M11 | Production Deployment | Week 40 | Not Started | M9, M10 |
+| M12 | User Training Complete | Week 44 | Not Started | M11 |
+| M13 | Project Closure | Week 48 | Not Started | M12 |
+| M14 | Contingency Buffer End | Week 52 | Not Started | - |
 
-## 3. Detailed Work Breakdown Structure (WBS) - Updates
+## 3. Detailed Work Breakdown Structure (WBS)
 
-### Phase 1: Analysis & Planning (Weeks 1-8) - Updated
+### Phase 1: Analysis & Planning (Weeks 1-8)
 
 | ID | Task | Duration | Owner | Predecessors | Status |
 |----|------|----------|-------|--------------|--------|
@@ -84,238 +71,120 @@
 | 1.3 | Stakeholder Interviews | 2 weeks | Business Analyst | 1.1 | Not Started |
 | 1.4 | Requirements Gathering | 3 weeks | Business Analyst | 1.2, 1.3 | Not Started |
 | 1.5 | Requirements Documentation | 2 weeks | Business Analyst | 1.4 | Not Started |
-| 1.6 | Security Standards Review | 2 weeks | Security Specialist | 1.1 | Not Started |
-| 1.7 | Security Requirements Mapping | 1 week | Technical Lead, Security Specialist | 1.5, 1.6 | Not Started |
-| 1.8 | Architecture Security Requirements Workshop | 1 week | Solution Architect, Security Specialist | 1.7 | Not Started |
-| 1.9 | Authentication Requirements Workshop | 1 week | Backend Developers, Security Specialist | 1.7 | Not Started |
-| 1.10 | Threat Modeling Workshop | 1 week | Security Specialist, Solution Architect | 1.5, 1.8, 1.9 | Not Started |
-| 1.11 | AWS Well-Architected Framework Introduction | 1 week | Cloud Architect | 1.1 | Not Started |
-| 1.12 | Risk Assessment (Updated with Security Focus) | 2 weeks | Project Manager, Security Specialist | 1.2, 1.10 | Not Started |
-| 1.13 | Requirements Review & Approval | 1 week | Project Sponsor | 1.5, 1.10, 1.12 | Not Started |
-| 1.14 | Project Plan Finalization | 1 week | Project Manager | 1.13 | Not Started |
+| 1.6 | Security Standards Review | 1 week | Technical Lead, Security Specialist | 1.1 | Not Started |
+| 1.7 | Risk Assessment | 2 weeks | Project Manager | 1.2, 1.6 | Not Started |
+| 1.8 | Project Plan Finalization | 1 week | Project Manager | 1.5, 1.7 | Not Started |
 
-### Phase 2: Design (Weeks 9-16) - Updated
+### Phase 2: Design (Weeks 9-16)
 
 | ID | Task | Duration | Owner | Predecessors | Status |
 |----|------|----------|-------|--------------|--------|
-| 2.1 | System Architecture Design | 3 weeks | Solution Architect | 1.13 | Not Started |
-| 2.2 | AWS Well-Architected Initial Review | 1 week | Cloud Architect | 2.1 | Not Started |
-| 2.3 | Database Design | 2 weeks | Database Architect | 2.1 | Not Started |
-| 2.4 | API Design | 2 weeks | Backend Lead | 2.1 | Not Started |
-| 2.5 | UI/UX Design | 3 weeks | UX Designer | 1.13 | Not Started |
-| 2.6 | CMS Design | 2 weeks | Solution Architect | 2.1, 2.5 | Not Started |
-| 2.7 | Security Design (Standard-Driven) | 2 weeks | Security Specialist, Technical Lead | 2.1, 1.10 | Not Started |
-| 2.8 | Authentication System Design | 2 weeks | Backend Lead, Security Specialist | 2.1, 2.7 | Not Started |
-| 2.9 | Session Management Design | 1 week | Backend Lead | 2.8 | Not Started |
-| 2.10 | Access Control Design | 1 week | Backend Lead | 2.8 | Not Started |
-| 2.11 | Error Handling & Logging Design | 1 week | Backend Lead | 2.1 | Not Started |
-| 2.12 | Cloud Infrastructure Design (AWS Well-Architected aligned) | 2 weeks | Cloud Architect | 2.1, 2.2 | Not Started |
-| 2.13 | Integration Design | 2 weeks | Integration Specialist | 2.1, 2.4 | Not Started |
-| 2.14 | Security Design Review | 1 week | Security Specialist, Technical Lead | 2.3-2.13 | Not Started |
-| 2.15 | Design Review & Approval | 1 week | Technical Director | 2.1-2.14 | Not Started |2 weeks | Backend Lead | 2.1 | Not Started |
-| 2.5 | UI/UX Design | 3 weeks | UX Designer | 1.11 | Not Started |
-| 2.6 | CMS Design | 2 weeks | Solution Architect | 2.1, 2.5 | Not Started |
-| 2.7 | Security Design (Enhanced) | 2 weeks | Security Champion, Security Specialist | 2.1, 1.8 | Not Started |
-| 2.8 | Cloud Infrastructure Design (AWS Well-Architected aligned) | 2 weeks | Cloud Architect | 2.1, 2.2 | Not Started |
-| 2.9 | Integration Design | 2 weeks | Integration Specialist | 2.1, 2.4 | Not Started |
-| 2.10 | Security Workbook Review - Design Phase | 1 week | Security Champion | 2.3-2.9 | Not Started |
-| 2.11 | Design Review & Approval | 1 week | Technical Director | 2.1-2.10 | Not Started |
+| 2.1 | System Architecture Design | 3 weeks | Solution Architect | 1.5 | Not Started |
+| 2.2 | Database Design | 2 weeks | Database Architect | 2.1 | Not Started |
+| 2.3 | API Design | 2 weeks | Backend Lead | 2.1 | Not Started |
+| 2.4 | UI/UX Design | 3 weeks | UX Designer | 1.5 | Not Started |
+| 2.5 | CMS Design | 2 weeks | Solution Architect | 2.1, 2.4 | Not Started |
+| 2.6 | Security Design | 2 weeks | Security Specialist | 2.1 | Not Started |
+| 2.7 | Cloud Infrastructure Design | 2 weeks | Cloud Architect | 2.1 | Not Started |
+| 2.8 | AWS Well-Architected Framework Initial Review | 1 week | Cloud Architect | 2.7 | Not Started |
+| 2.9 | Integration Design | 2 weeks | Integration Specialist | 2.1, 2.3 | Not Started |
+| 2.10 | Design Review & Approval | 1 week | Technical Director | 2.1-2.9 | Not Started |
 
-### Phase 3: Development (Weeks 17-32) - Updated
+### Phase 3: Development (Weeks 17-32)
 
 | ID | Task | Duration | Owner | Predecessors | Status |
 |----|------|----------|-------|--------------|--------|
-| 3.1 | Development Environment Setup | 1 week | DevOps Engineer | 2.11 | Not Started |
-| 3.2 | Security Tools & Scanning Setup | 1 week | Security Champion, DevOps Engineer | 3.1 | Not Started |
-| 3.3 | Database Implementation | 2 weeks | Database Developer | 3.1, 2.3 | Not Started |
-| 3.4 | Core Backend Services | 4 weeks | Backend Developers | 3.1, 2.4 | Not Started |
-| 3.5 | API Development | 3 weeks | Backend Developers | 3.4 | Not Started |
-| 3.6 | Integration Implementation | 3 weeks | Integration Developer | 3.5, 2.9 | Not Started |
-| 3.7 | Frontend Components | 6 weeks | Frontend Developers | 3.1, 2.5 | Not Started |
-| 3.8 | CMS Implementation | 4 weeks | CMS Developer | 3.4, 2.6 | Not Started |
-| 3.9 | User Authentication & Security (Enhanced) | 2 weeks | Security Developer, Security Champion | 3.4, 2.7 | Not Started |
-| 3.10 | Cloud Infrastructure Setup (AWS Well-Architected aligned) | 3 weeks | Cloud Engineer | 3.1, 2.8 | Not Started |
-| 3.11 | AWS Well-Architected Mid-Project Review | 1 week | Cloud Architect | 3.10 | Not Started |
-| 3.12 | Security Workbook Review - Development Phase | 1 week | Security Champion | 3.3-3.10 | Not Started |
-| 3.13 | SAST & Dependency Scanning | Ongoing | Security Champion | 3.2 | Not Started |
-| 3.14 | Monitoring Implementation | 2 weeks | DevOps Engineer | 3.10 | Not Started |
-| 3.15 | Development Integration & Testing | 3 weeks | Development Team | 3.3-3.14 | Not Started |
-| 3.16 | Development Completion Review | 1 week | Technical Lead | 3.15 | Not Started |
+| 3.1 | Development Environment Setup | 1 week | DevOps Engineer | 2.10 | Not Started |
+| 3.2 | Database Implementation | 2 weeks | Database Developer | 3.1, 2.2 | Not Started |
+| 3.3 | Core Backend Services | 4 weeks | Backend Developers | 3.1, 2.3 | Not Started |
+| 3.4 | API Development | 3 weeks | Backend Developers | 3.3 | Not Started |
+| 3.5 | Integration Implementation | 3 weeks | Integration Developer | 3.4, 2.9 | Not Started |
+| 3.6 | Frontend Components | 6 weeks | Frontend Developers | 3.1, 2.4 | Not Started |
+| 3.7 | CMS Implementation | 4 weeks | CMS Developer | 3.3, 2.5 | Not Started |
+| 3.8 | User Authentication & Security | 2 weeks | Security Developer | 3.3, 2.6 | Not Started |
+| 3.9 | Security Standards Implementation | 4 weeks | Backend & Frontend Developers | 3.3, 3.8 | Not Started |
+| 3.10 | Cloud Infrastructure Setup | 3 weeks | Cloud Engineer | 3.1, 2.7 | Not Started |
+| 3.11 | Monitoring Implementation | 2 weeks | DevOps Engineer | 3.10 | Not Started |
+| 3.12 | Development Integration & Testing | 3 weeks | Development Team | 3.2-3.11 | Not Started |
+| 3.13 | Development Completion Review | 1 week | Technical Lead | 3.12 | Not Started |
 
-### Phase 4: Testing & QA (Weeks 33-40) - Updated
+### Phase 4: Testing & QA (Weeks 33-40)
 
 | ID | Task | Duration | Owner | Predecessors | Status |
 |----|------|----------|-------|--------------|--------|
-| 4.1 | Test Environment Setup | 1 week | DevOps Engineer | 3.16 | Not Started |
-| 4.2 | Test Plan Development (Mapped to Security Workbook) | 1 week | QA Lead, Security Champion | 3.16 | Not Started |
+| 4.1 | Test Environment Setup | 1 week | DevOps Engineer | 3.13 | Not Started |
+| 4.2 | Test Plan Development | 1 week | QA Lead | 3.13 | Not Started |
 | 4.3 | Functional Testing | 3 weeks | QA Team | 4.1, 4.2 | Not Started |
 | 4.4 | Integration Testing | 2 weeks | QA Team | 4.3 | Not Started |
 | 4.5 | Performance Testing | 2 weeks | Performance Engineer | 4.3 | Not Started |
-| 4.6 | Authentication & Access Control Testing | 1 week | Security Tester, Security Champion | 4.3 | Not Started |
-| 4.7 | Session Management Testing | 1 week | Security Tester | 4.6 | Not Started |
-| 4.8 | Input Validation & Injection Testing | 1 week | Security Tester | 4.7 | Not Started |
-| 4.9 | Cryptography Implementation Testing | 1 week | Security Specialist | 4.8 | Not Started |
-| 4.10 | File & Resource Security Testing | 1 week | Security Tester | 4.9 | Not Started |
-| 4.11 | HTTP Security Headers Testing | 1 week | Security Tester | 4.10 | Not Started |
-| 4.12 | Error Handling & Logging Testing | 1 week | Security Tester | 4.11 | Not Started |
-| 4.13 | Full DAST & Penetration Testing | 2 weeks | Security Specialist | 4.12 | Not Started |
-| 4.14 | AWS Well-Architected Pre-Deployment Review | 1 week | Cloud Architect | 4.5 | Not Started |
-| 4.15 | Bug Fixes & Regression Testing | 3 weeks | Development Team | 4.3-4.13 | Not Started |
-| 4.16 | Security Workbook Final Assessment | 1 week | Security Champion | 4.13, 4.15 | Not Started |
-| 4.17 | User Acceptance Testing | 2 weeks | Business Users | 4.15 | Not Started |
-| 4.18 | UAT Bug Fixes | 1 week | Development Team | 4.17 | Not Started |
-| 4.19 | Testing Completion Review | 1 week | QA Lead, Security Champion | 4.16, 4.18 | Not Started |
+| 4.6 | Security Testing | 2 weeks | Security Tester | 4.3 | Not Started |
+| 4.7 | Security Standards Compliance Testing | 2 weeks | Security Specialist | 4.6 | Not Started |
+| 4.8 | Bug Fixes & Regression Testing | 3 weeks | Development Team | 4.3, 4.4, 4.5, 4.6, 4.7 | Not Started |
+| 4.9 | User Acceptance Testing | 2 weeks | Business Users | 4.8 | Not Started |
+| 4.10 | UAT Bug Fixes | 1 week | Development Team | 4.9 | Not Started |
+| 4.11 | Testing Completion Review | 1 week | QA Lead | 4.10 | Not Started |
 
-### Phase 5: Migration & Deployment (Weeks 41-52) - Updated
+### Phase 5: Migration & Deployment (Weeks 41-52)
 
 | ID | Task | Duration | Owner | Predecessors | Status |
 |----|------|----------|-------|--------------|--------|
-| 5.1 | Data Migration Planning | 2 weeks | Data Migration Specialist | 4.13 | Not Started |
+| 5.1 | Data Migration Planning | 2 weeks | Data Migration Specialist | 4.11 | Not Started |
 | 5.2 | Data Migration Scripts | 2 weeks | Data Migration Developer | 5.1 | Not Started |
 | 5.3 | Migration Testing | 2 weeks | Data Migration Team | 5.2 | Not Started |
-| 5.4 | Production Environment Setup (AWS Well-Architected aligned) | 2 weeks | DevOps Engineer | 4.13, 4.8 | Not Started |
-| 5.5 | Security Controls Verification | 1 week | Security Champion | 5.4 | Not Started |
+| 5.4 | Production Environment Setup | 2 weeks | DevOps Engineer | 4.11 | Not Started |
+| 5.5 | AWS Well-Architected Final Review | 1 week | Cloud Architect | 5.4 | Not Started |
 | 5.6 | Deployment Planning | 1 week | Release Manager | 5.3, 5.4, 5.5 | Not Started |
-| 5.7 | User Training Materials | 2 weeks | Training Specialist | 4.13 | Not Started |
+| 5.7 | User Training Materials | 2 weeks | Training Specialist | 4.11 | Not Started |
 | 5.8 | User Training Sessions | 2 weeks | Training Specialist | 5.7 | Not Started |
-| 5.9 | Final Documentation | 3 weeks | Technical Writer | 4.13 | Not Started |
-| 5.10 | Pre-deployment Review | 1 week | Project Manager | 5.3-5.9 | Not Started |
+| 5.9 | Final Documentation | 3 weeks | Technical Writer | 4.11 | Not Started |
+| 5.10 | Pre-deployment Review | 1 week | Project Manager | 5.3, 5.4, 5.5, 5.7, 5.8, 5.9 | Not Started |
 | 5.11 | Production Deployment | 1 week | DevOps Team | 5.10 | Not Started |
 | 5.12 | Post-deployment Validation | 1 week | QA Team | 5.11 | Not Started |
-| 5.13 | Security Verification in Production | 1 week | Security Champion | 5.11 | Not Started |
-| 5.14 | Knowledge Transfer | 2 weeks | Development Team | 5.12, 5.13 | Not Started |
-| 5.15 | Post-implementation Support | 2 weeks | Support Team | 5.14 | Not Started |
-| 5.16 | Project Closure | 1 week | Project Manager | 5.15 | Not Started |
+| 5.13 | Knowledge Transfer | 2 weeks | Development Team | 5.11 | Not Started |
+| 5.14 | Post-implementation Support | 2 weeks | Support Team | 5.12 | Not Started |
+| 5.15 | Project Closure | 1 week | Project Manager | 5.14 | Not Started |
 
-## 8. Quality Management Plan (Updated)
+## 4. Resource Allocation Chart
 
-### Quality Objectives (Updated)
-- No more than 3 bugs related to application reception within 6 months after release
-- 99.9% uptime for application reception functionality
-- 100% of documented requirements implemented and verified
-- 100% test coverage for critical functionality
-- 90% test coverage for overall system
-- **NEW:** Zero critical or high security vulnerabilities in production
-- **NEW:** 100% compliance with AWS Well-Architected Framework essential criteria
-- **NEW:** 100% compliance with Security Workbook's critical security requirements
-- **NEW:** 90% compliance with all Security Workbook requirements
+```
+Resource               | M1 | M2 | M3 | M4 | M5 | M6 | M7 | M8 | M9 | M10| M11| M12
+-----------------------|----|----|----|----|----|----|----|----|----|----|----|----|
+Project Manager        | 100| 100| 100| 100| 100| 100| 100| 100| 100| 100| 100| 100|
+Business Analyst       | 100| 100|  75|  50|  25|  25|  25|  25|  50| 100|  50|  25|
+Solution Architect     | 100| 100| 100|  75|  50|  25|  25|  25|  25|  25|  25|  25|
+UX Designer            |  50| 100| 100| 100|  50|  25|  25|  25|  25|  25|  25|   0|
+Frontend Developer 1   |   0|  25|  50| 100| 100| 100| 100| 100|  75|  50|  25|  25|
+Frontend Developer 2   |   0|   0|  50| 100| 100| 100| 100| 100|  75|  50|  25|  25|
+Backend Developer 1    |   0|  25|  50| 100| 100| 100| 100| 100|  75|  50|  25|  25|
+Backend Developer 2    |   0|   0|  50| 100| 100| 100| 100| 100|  75|  50|  25|  25|
+Database Architect     |  25| 100|  75|  50|  25|  25|  25|  25|  25|  25|  50|  25|
+Cloud Architect        |  25|  75| 100|  75|  50|  50|  25|  25|  25|  25|  50|  50|
+DevOps Engineer        |   0|  25|  50|  75| 100| 100|  75|  75|  75| 100| 100|  75|
+QA Lead                |  25|  25|  50|  50|  50|  75| 100| 100| 100|  75|  50|  25|
+QA Tester 1            |   0|   0|  25|  25|  25|  50| 100| 100| 100|  75|  25|  25|
+QA Tester 2            |   0|   0|   0|  25|  25|  50| 100| 100| 100|  75|  25|  25|
+Security Specialist    |  25|  50|  75|  50|  25|  25|  25|  50| 100|  50|  25|  25|
+Technical Writer       |  25|  25|  25|  25|  25|  25|  25|  50|  75| 100| 100|  50|
+Training Specialist    |   0|   0|   0|   0|   0|   0|   0|  25|  50| 100| 100|  50|
+```
+*Values represent percentage of time allocated to the project
 
-### Quality Assurance Activities (Updated)
+## 5. Budget Allocation
 
-| Activity | Description | Frequency | Owner | Verification Method |
-|----------|-------------|-----------|-------|-------------------|
-| Requirements Review | Verify requirements clarity and completeness | Once (Phase 1) | Business Analyst | Sign-off |
-| Design Review | Verify design meets requirements | Once (Phase 2) | Solution Architect | Sign-off |
-| Security Workbook Reviews | Security assessment per SDLC phase | Per phase | Security Champion | Checklist completion |
-| AWS Well-Architected Reviews | Verify compliance with AWS framework | 3 times | Cloud Architect | AWS Well-Architected Tool |
-| Code Reviews | Verify code quality and standards | Continuous | Technical Lead | Pull request approvals |
-| Static Code Analysis | Verify code security and quality | Continuous | Security Champion | Tool reports |
-| Dependency Scanning | Identify vulnerable dependencies | Weekly | Security Champion | Tool reports |
-| Unit Testing | Verify individual components | Continuous | Developers | Automated tests |
-| Integration Testing | Verify component interactions | Phase 4 | QA Team | Test results |
-| System Testing | Verify end-to-end functionality | Phase 4 | QA Team | Test results |
-| Performance Testing | Verify system performance | Phase 4 | Performance Engineer | Test results |
-| Security Testing | Verify security controls | Phase 4 | Security Specialist | Test results |
-| Penetration Testing | Identify security vulnerabilities | Phase 4 | Security Specialist | Test report |
-| User Acceptance Testing | Verify business requirements | Phase 4 | Product Owner | Sign-off |
-| Deployment Verification | Verify successful deployment | Phase 5 | DevOps Engineer | Checklist |
-| Security Production Verification | Verify security controls in production | Phase 5 | Security Champion | Security scan results |
+| Category | Budget (USD) | % of Total | Status |
+|----------|--------------|------------|--------|
+| Project Management | $10,000 | 10% | Planned |
+| Analysis & Design | $15,000 | 15% | Planned |
+| Development | $38,000 | 38% | Planned |
+| Testing & QA | $15,000 | 15% | Planned |
+| Deployment & Migration | $10,000 | 10% | Planned |
+| Training & Knowledge Transfer | $5,000 | 5% | Planned |
+| Security Standards Implementation | $3,000 | 3% | Planned |
+| AWS Well-Architected Implementation | $2,000 | 2% | Planned |
+| Contingency | $2,000 | 2% | Reserved |
+| **TOTAL** | **$100,000** | **100%** | **Planned** |
 
-## 11. AWS & Cloud Infrastructure Plan (Updated with Well-Architected Framework)
-
-### AWS Well-Architected Framework Implementation
-
-| Pillar | Key Activities | Owner | Deliverables |
-|--------|---------------|-------|-------------|
-| Operational Excellence | - DevOps implementation<br>- CI/CD pipeline<br>- Infrastructure as Code<br>- Run books<br>- Post-incident reviews | DevOps Engineer | - IaC templates<br>- Monitoring dashboards<br>- Deployment automations |
-| Security | - Security Champion integration<br>- Defense in depth<br>- Least privilege access<br>- Data protection<br>- Incident response | Security Champion | - IAM policies<br>- Security configurations<br>- Encryption implementations |
-| Reliability | - Multi-AZ deployments<br>- Auto-scaling<br>- Failure recovery testing<br>- SLA definition | Cloud Architect | - Architecture diagrams<br>- Recovery procedures<br>- SLA documentation |
-| Performance Efficiency | - Resource right-sizing<br>- Performance monitoring<br>- Caching strategy | Performance Engineer | - Performance test results<br>- Optimization recommendations |
-| Cost Optimization | - Resource tagging<br>- Right-sizing instances<br>- Spot instances where applicable<br>- Cost monitoring | Cloud Architect | - Cost allocation tags<br>- Cost optimization report |
-| Sustainability | - Resource efficiency<br>- Minimizing idle resources | Cloud Architect | - Sustainability assessment |
-
-### AWS Services to be Used (Updated)
-
-| AWS Service | Purpose | Configuration | Well-Architected Focus | Owner |
-|-------------|---------|--------------|------------------------|-------|
-| Amazon EC2 | Application servers | Auto-scaling group, t3.medium | Performance, Reliability | Cloud Engineer |
-| Amazon RDS | Database | Multi-AZ MySQL, db.m5.large | Security, Reliability | Database Admin |
-| Amazon S3 | Static content, backups | Standard storage class, versioning enabled | Security, Cost Optimization | Cloud Engineer |
-| Amazon CloudFront | Content delivery | Global distribution, HTTPS | Performance, Security | Cloud Engineer |
-| AWS WAF | Web application firewall | Standard + custom protection set | Security | Security Specialist |
-| Amazon Route 53 | DNS management | Health checks, failover | Reliability | DevOps Engineer |
-| Amazon CloudWatch | Monitoring and alerting | Custom dashboards, alarms | Operational Excellence | DevOps Engineer |
-| AWS Lambda | Serverless functions | Event-driven processing | Performance, Cost | Backend Developer |
-| Amazon ElastiCache | Session management | Redis cluster | Performance | Backend Developer |
-| AWS Certificate Manager | SSL certificates | Auto-renewal | Security | Security Specialist |
-| AWS GuardDuty | Threat detection | Standard protection | Security | Security Specialist |
-| AWS Config | Configuration monitoring | Custom rules | Operational Excellence | DevOps Engineer |
-| AWS CloudTrail | API logging | All regions, encrypted | Security | Security Specialist |
-| AWS Security Hub | Security findings | All standards enabled | Security | Security Champion |
-
-## 13. Security Standards Implementation (Updated)
-
-### Distributed Security Responsibilities
-
-Since there is no dedicated Security Champion role, security responsibilities will be distributed across the team as follows:
-
-| Role | Security Responsibilities |
-|------|---------------------------|
-| Security Specialist | - Lead threat modeling sessions<br>- Define security architecture requirements<br>- Conduct penetration testing<br>- Provide security expertise and guidance |
-| Solution Architect | - Ensure architecture meets security standards<br>- Design secure infrastructure<br>- Validate security patterns and approaches |
-| Technical Lead | - Own overall security compliance tracking<br>- Enforce secure coding standards<br>- Coordinate security reviews during development |
-| DevOps Engineer | - Implement secure CI/CD pipelines<br>- Configure security scanning tools<br>- Manage secure deployment processes |
-| QA Lead | - Develop security testing plans<br>- Coordinate security testing execution<br>- Validate security requirements are tested |
-| Backend Developers | - Implement authentication & authorization controls<br>- Secure data access and processing<br>- Follow input validation requirements |
-| Frontend Developers | - Implement client-side security controls<br>- Secure UI components against XSS<br>- Follow secure coding guidelines |
-| Project Manager | - Track security standards compliance<br>- Ensure security tasks are scheduled appropriately<br>- Report on security status to stakeholders |
-
-### Security Standards Categories and Implementation Plan
-
-| Category | # of Requirements | Verification Method | Implementation Phase | Owner |
-|----------|-------------------|---------------------|----------------------|-------|
-| Architecture | 6 | Architecture review | Analysis & Design | Solution Architect |
-| Authentication | 26 | Code review, Pen testing | Design & Development | Security Specialist, Backend Developers |
-| Session Management | 8 | Code review, Pen testing | Development | Backend Developers |
-| Access Control | 8 | Code review, Security testing | Development | Backend Developers |
-| Malicious Input Handling | 19 | SAST, DAST, Code review | Development | All Developers |
-| Cryptography | 5 | Code review, Security testing | Design & Development | Security Specialist, Backend Developers |
-| Error Handling & Logging | 8 | Code review, Log analysis | Development | Backend Developers |
-| Data Protection | 6 | Code review, Security testing | Development | All Developers |
-| Communications Security | 8 | Configuration review, Pen testing | Design & Development | Network Engineer |
-| HTTP Security | 7 | DAST, Configuration review | Development | DevOps Engineer |
-| Files & Resources | 7 | Code review, Security testing | Development | All Developers |
-| Mobile | 6 | Mobile app testing | Development | Mobile Developers |
-| Web Services | 6 | API testing, DAST | Development | Backend Developers |
-| Configuration | 4 | Configuration review | Development & Deployment | DevOps Engineer |
-| Embedded Devices (IoT) | 11 | Hardware testing, Firmware analysis | Hardware Design & Development | Embedded Developers |
-
-## 14. Integration of Security Workbook & AWS Well-Architected Framework
-
-| SDLC Phase | Security Workbook Activities | AWS Well-Architected Activities | Integration Points |
-|------------|------------------------------|--------------------------------|-------------------|
-| Analysis | - Threat modeling<br>- Security requirements | - Initial Well-Architected assessment<br>- Security pillar planning | - Combined security requirements<br>- Aligned threat model with AWS security best practices |
-| Design | - Security controls design<br>- Security architecture | - Well-Architected design review<br>- Service selection aligned with pillars | - AWS services mapped to security controls<br>- Defense in depth architecture |
-| Development | - Secure coding<br>- SAST<br>- Dependency scanning | - IaC with security controls<br>- AWS security services implementation | - Security guardrails in IaC<br>- DevSecOps pipeline |
-| Testing | - Security testing<br>- Penetration testing | - Well-Architected validation<br>- AWS Config rules testing | - Combined security validation<br>- Automated compliance checking |
-| Deployment | - Production security verification | - Well-Architected final review<br>- AWS security monitoring activation | - Comprehensive production security posture<br>- Ongoing compliance monitoring |
-
-## 15. Updated Budget Allocation
-
-| Category | Original Budget | Updated Budget | % of Total | Status |
-|----------|----------------|---------------|------------|--------|
-| Project Management | $10,000 | $10,000 | 10% | Planned |
-| Analysis & Design | $15,000 | $15,000 | 15% | Planned |
-| Development | $40,000 | $38,000 | 38% | Planned |
-| Testing & QA | $15,000 | $15,000 | 15% | Planned |
-| Deployment & Migration | $10,000 | $10,000 | 10% | Planned |
-| Training & Knowledge Transfer | $5,000 | $5,000 | 5% | Planned |
-| **Security Champion Implementation** | - | **$3,000** | **3%** | **New** |
-| **AWS Well-Architected Implementation** | - | **$2,000** | **2%** | **New** |
-| Contingency | $5,000 | $2,000 | 2% | Reduced |
-| **TOTAL** | **$100,000** | **$100,000** | **100%** | **Updated** |
-
-## 16. Updated Risk Register
+## 6. Risk Register
 
 | ID | Risk Description | Probability | Impact | Overall Risk | Mitigation Strategy | Owner | Status |
 |----|------------------|-------------|--------|--------------|---------------------|-------|--------|
@@ -324,16 +193,142 @@ Since there is no dedicated Security Champion role, security responsibilities wi
 | R3 | Business users don't adopt new CMS | Medium | High | High | User-centered design, extensive training | UX Designer | Open |
 | R4 | Performance issues in production | Low | High | Medium | Performance testing, scalable architecture | Performance Engineer | Open |
 | R5 | Data migration errors | Medium | High | High | Multiple trial migrations, validation | Data Migration Specialist | Open |
-| R6 | Security vulnerabilities | Medium | High | High | Security-by-design, Security Champion implementation | Security Champion | Open |
+| R6 | Security vulnerabilities | Medium | High | High | Security standards implementation, penetration testing | Security Specialist | Open |
 | R7 | Scope creep | High | Medium | High | Clear requirements, change management | Project Manager | Open |
 | R8 | Key resource unavailability | Medium | Medium | Medium | Cross-training, backup resources | Project Manager | Open |
 | R9 | Budget overrun | Medium | High | High | Regular budget tracking, phased approach | Project Manager | Open |
 | R10 | Timeline delays | Medium | High | High | Schedule buffers, critical path monitoring | Project Manager | Open |
-| **R11** | **AWS service limitations or changes** | **Low** | **Medium** | **Medium** | **Service selection validation, alternatives identified** | **Cloud Architect** | **Open** |
-| **R12** | **Security compliance gaps** | **Medium** | **High** | **High** | **Early and regular Security Workbook assessments** | **Security Champion** | **Open** |
-| **R13** | **Third-party component vulnerabilities** | **Medium** | **High** | **High** | **Dependency scanning, component inventory** | **Security Champion** | **Open** |
+| R11 | Failure to meet security standards | Medium | High | High | Security standards checklist, regular reviews | Security Specialist | Open |
+| R12 | AWS service limitations | Low | Medium | Medium | Service selection validation, alternatives identified | Cloud Architect | Open |
 
-## 17. Approval and Sign-off (Updated)
+## 7. Communication Plan
+
+| Communication Type | Audience | Purpose | Frequency | Format | Owner | Distribution Method |
+|-------------------|----------|---------|-----------|--------|-------|-------------------|
+| Status Reports | Project Sponsor, Stakeholders | Project progress update | Weekly | Report | Project Manager | Email |
+| Team Meetings | Project Team | Coordination and issue resolution | Daily | Meeting | Project Manager | Video Conference |
+| Steering Committee | Executive Sponsors | Decision making, escalations | Bi-weekly | Meeting | Project Manager | In-person/Video |
+| Technical Reviews | Technical Team | Technical issue resolution | Weekly | Meeting | Technical Lead | Video Conference |
+| Risk Reviews | Project Team, Stakeholders | Risk monitoring | Bi-weekly | Meeting | Risk Manager | Video Conference |
+| Milestone Reviews | All Stakeholders | Phase completion review | At milestones | Meeting | Project Manager | In-person |
+| Change Request Reviews | Change Control Board | Evaluate change requests | As needed | Meeting | Project Manager | Video Conference |
+| Security Standards Reviews | Technical Team | Security compliance review | Monthly | Meeting | Security Specialist | Video Conference |
+
+## 8. Quality Management Plan
+
+### Quality Objectives
+- No more than 3 bugs related to application reception within 6 months after release
+- 99.9% uptime for application reception functionality
+- 100% of documented requirements implemented and verified
+- 100% test coverage for critical functionality
+- 90% test coverage for overall system
+- 100% compliance with critical security standards requirements
+- 90% overall compliance with security standards
+
+### Quality Assurance Activities
+
+| Activity | Description | Frequency | Owner | Verification Method |
+|----------|-------------|-----------|-------|-------------------|
+| Requirements Review | Verify requirements clarity and completeness | Once (Phase 1) | Business Analyst | Sign-off |
+| Design Review | Verify design meets requirements | Once (Phase 2) | Solution Architect | Sign-off |
+| Security Standards Review | Verify compliance with security standards | Per Phase | Security Specialist | Checklist |
+| AWS Well-Architected Review | Verify compliance with AWS best practices | Twice | Cloud Architect | AWS Well-Architected Tool |
+| Code Reviews | Verify code quality and standards | Continuous | Technical Lead | Pull request approvals |
+| Unit Testing | Verify individual components | Continuous | Developers | Automated tests |
+| Integration Testing | Verify component interactions | Phase 4 | QA Team | Test results |
+| System Testing | Verify end-to-end functionality | Phase 4 | QA Team | Test results |
+| Performance Testing | Verify system performance | Phase 4 | Performance Engineer | Test results |
+| Security Testing | Verify security controls | Phase 4 | Security Specialist | Test results |
+| User Acceptance Testing | Verify business requirements | Phase 4 | Product Owner | Sign-off |
+| Deployment Verification | Verify successful deployment | Phase 5 | DevOps Engineer | Checklist |
+
+## 9. Change Management Process
+
+### Change Request Process
+1. Submit Change Request form
+2. Initial impact assessment
+3. Change Control Board review
+4. Approval/Rejection decision
+5. Implementation planning (if approved)
+6. Implementation
+7. Verification and closure
+
+### Change Control Board (CCB)
+- Project Sponsor (Chair)
+- Project Manager
+- Technical Lead
+- Business Representative
+- Quality Assurance Lead
+
+### Change Request Classification
+
+| Priority | Response Time | CCB Meeting | Implementation Timeframe |
+|----------|---------------|-------------|--------------------------|
+| Critical | 24 hours | Emergency | Immediate |
+| High | 3 business days | Next scheduled | Next sprint |
+| Medium | 5 business days | Next scheduled | Prioritized backlog |
+| Low | 10 business days | Next scheduled | Backlog |
+
+## 10. Project Success Criteria
+
+| Criteria | Description | Measurement Method | Target | Owner |
+|----------|-------------|-------------------|--------|-------|
+| Schedule | Complete within timeline | Actual vs. planned completion | Within 12 months | Project Manager |
+| Budget | Complete within budget | Actual vs. planned costs | Under $100,000 | Project Manager |
+| Quality | Bug-free reception function | Bug tracking | ≤3 bugs in 6 months | QA Lead |
+| CMS Usability | Business users can use CMS | User satisfaction survey | >80% satisfaction | Product Owner |
+| Documentation | Complete system documentation | Documentation review | 100% completion | Technical Writer |
+| Performance | System response time | Performance testing | <2 seconds response | Performance Engineer |
+| Availability | System uptime | Monitoring metrics | 99.9% uptime | DevOps Engineer |
+| Security | Security standards compliance | Security testing | 100% compliance with critical requirements | Security Specialist |
+| AWS Architecture | AWS Well-Architected compliance | AWS review | Pass all essential criteria | Cloud Architect |
+
+## 11. AWS & Cloud Infrastructure Plan
+
+### AWS Services to be Used
+
+| AWS Service | Purpose | Configuration | Owner |
+|-------------|---------|--------------|-------|
+| Amazon EC2 | Application servers | Auto-scaling group, t3.medium | Cloud Engineer |
+| Amazon RDS | Database | Multi-AZ MySQL, db.m5.large | Database Admin |
+| Amazon S3 | Static content, backups | Standard storage class | Cloud Engineer |
+| Amazon CloudFront | Content delivery | Global distribution | Cloud Engineer |
+| AWS WAF | Web application firewall | Standard protection set | Security Specialist |
+| Amazon Route 53 | DNS management | Health checks, failover | DevOps Engineer |
+| Amazon CloudWatch | Monitoring and alerting | Custom dashboards, alarms | DevOps Engineer |
+| AWS Lambda | Serverless functions | Event-driven processing | Backend Developer |
+| Amazon ElastiCache | Session management | Redis cluster | Backend Developer |
+| AWS Certificate Manager | SSL certificates | Auto-renewal | Security Specialist |
+
+### AWS Well-Architected Framework Integration
+
+| Pillar | Key Activities | Owner | When Implemented |
+|--------|---------------|-------|------------------|
+| Operational Excellence | - DevOps implementation<br>- CI/CD pipeline | DevOps Engineer | Development Phase |
+| Security | - Defense in depth<br>- Least privilege access | Security Specialist | Development Phase |
+| Reliability | - Multi-AZ deployments<br>- Auto-scaling | Cloud Architect | Design & Development |
+| Performance Efficiency | - Resource right-sizing<br>- Performance monitoring | Performance Engineer | Development & Testing |
+| Cost Optimization | - Resource tagging<br>- Right-sizing instances | Cloud Architect | Design & Development |
+| Sustainability | - Resource efficiency | Cloud Architect | Design & Development |
+
+## 12. Security Standards Implementation
+
+| Category | Implementation Approach | Validation Method | Phase |
+|----------|-------------------------|------------------|-------|
+| Architecture | Follow secure architecture patterns | Architecture review | Design |
+| Authentication | Implement all 26 authentication requirements | Security testing | Development & Testing |
+| Session Management | Implement secure session handling | Code review, Pen testing | Development & Testing |
+| Access Control | Role-based access control | Security testing | Development & Testing |
+| Input Validation | Server & client-side validation | SAST, DAST | Development & Testing |
+| Cryptography | Follow cryptography standards | Security review | Development |
+| Error Handling | Secure error handling implementation | Code review | Development |
+| Data Protection | Encrypt sensitive data | Security testing | Development & Testing |
+| Communications | TLS implementation | Configuration review | Development |
+| HTTP Security | Secure HTTP headers | Security testing | Development & Testing |
+| File Handling | Secure file upload handling | Security testing | Development & Testing |
+| Web Services | API security controls | API testing | Development & Testing |
+
+## 13. Approval and Sign-off
 
 | Role | Name | Signature | Date |
 |------|------|-----------|------|
@@ -342,8 +337,8 @@ Since there is no dedicated Security Champion role, security responsibilities wi
 | Technical Director | | | |
 | Client Representative | | | |
 | Finance Manager | | | |
-| **Security Champion** | | | |
-| **Cloud Architect** | | | |
+| Security Specialist | | | |
+| Cloud Architect | | | |
 
 ---
 
@@ -352,4 +347,4 @@ Since there is no dedicated Security Champion role, security responsibilities wi
 | Version | Date | Changes | Author |
 |---------|------|---------|--------|
 | 1.0 | MM/DD/YYYY | Initial document | |
-| **2.0** | **MM/DD/YYYY** | **Added AWS Well-Architected Framework & Security Workbook implementation** | |
+| 2.0 | MM/DD/YYYY | Added AWS Well-Architected Framework & Security Standards implementation | |
