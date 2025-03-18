@@ -1,4 +1,4 @@
-# Agile Sprint Plan for Looop-denki Web System Replacement
+# Agile Sprint Plan for  Web System Replacement
 
 ## Sprint Framework Overview
 
@@ -570,4 +570,4 @@ We will track the following metrics to ensure project health:
 6. **Technical Debt**: Hours allocated to addressing technical debt
 7. **Team Happiness**: Subjective measure of team satisfaction
 
-This comprehensive Agile Sprint Plan provides a detailed roadmap for the Looop-denki Web System Replacement project while incorporating contingency planning and disaster recovery strategies to ensure successful delivery regardless of challenges encountered.
+This comprehensive Agile Sprint Plan provides a detailed roadmap for the Web System Replacement project while incorporating contingency planning and disaster recovery strategies to ensure successful delivery regardless of challenges encountered.
