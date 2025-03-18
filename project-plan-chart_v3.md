@@ -39,7 +39,7 @@
 ├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
 │ Project Mgmt  │████│████│████│████│████│████│████│████│████│████│████│████│Not Started│
 ├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
-│ Security WB   │████│████│████│████│████│████│████│████│████│████│████│    │Not Started│
+│ Security Stds │████│████│████│████│████│████│████│████│████│████│████│    │Not Started│
 ├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
 │ AWS Well-Arch │████│████│████│████│████│████│████│████│████│████│    │    │Not Started│
 └───────────────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴───────────┘
@@ -84,25 +84,35 @@
 | 1.3 | Stakeholder Interviews | 2 weeks | Business Analyst | 1.1 | Not Started |
 | 1.4 | Requirements Gathering | 3 weeks | Business Analyst | 1.2, 1.3 | Not Started |
 | 1.5 | Requirements Documentation | 2 weeks | Business Analyst | 1.4 | Not Started |
-| 1.6 | Security Champion Appointment | 1 week | Project Manager | 1.1 | Not Started |
-| 1.7 | Security Workbook Analysis & Baseline | 2 weeks | Security Champion | 1.6 | Not Started |
-| 1.8 | Security Requirements Mapping to Workbook | 1 week | Security Champion | 1.5, 1.7 | Not Started |
-| 1.9 | Architecture Security Requirements Workshop | 1 week | Security Champion, Solution Architect | 1.8 | Not Started |
-| 1.10 | Authentication Requirements Workshop | 1 week | Security Champion, Security Developer | 1.8 | Not Started |
-| 1.11 | Threat Modeling Workshop | 1 week | Security Champion | 1.5, 1.9, 1.10 | Not Started |
-| 1.12 | AWS Well-Architected Framework Introduction | 1 week | Cloud Architect | 1.1 | Not Started |
-| 1.13 | Risk Assessment (Updated with Security Focus) | 2 weeks | Project Manager, Security Champion | 1.2, 1.11 | Not Started |
-| 1.14 | Requirements Review & Approval | 1 week | Project Sponsor | 1.5, 1.11, 1.13 | Not Started |
-| 1.15 | Project Plan Finalization | 1 week | Project Manager | 1.14 | Not Started |
+| 1.6 | Security Standards Review | 2 weeks | Security Specialist | 1.1 | Not Started |
+| 1.7 | Security Requirements Mapping | 1 week | Technical Lead, Security Specialist | 1.5, 1.6 | Not Started |
+| 1.8 | Architecture Security Requirements Workshop | 1 week | Solution Architect, Security Specialist | 1.7 | Not Started |
+| 1.9 | Authentication Requirements Workshop | 1 week | Backend Developers, Security Specialist | 1.7 | Not Started |
+| 1.10 | Threat Modeling Workshop | 1 week | Security Specialist, Solution Architect | 1.5, 1.8, 1.9 | Not Started |
+| 1.11 | AWS Well-Architected Framework Introduction | 1 week | Cloud Architect | 1.1 | Not Started |
+| 1.12 | Risk Assessment (Updated with Security Focus) | 2 weeks | Project Manager, Security Specialist | 1.2, 1.10 | Not Started |
+| 1.13 | Requirements Review & Approval | 1 week | Project Sponsor | 1.5, 1.10, 1.12 | Not Started |
+| 1.14 | Project Plan Finalization | 1 week | Project Manager | 1.13 | Not Started |
 
 ### Phase 2: Design (Weeks 9-16) - Updated
 
 | ID | Task | Duration | Owner | Predecessors | Status |
 |----|------|----------|-------|--------------|--------|
-| 2.1 | System Architecture Design | 3 weeks | Solution Architect | 1.11 | Not Started |
+| 2.1 | System Architecture Design | 3 weeks | Solution Architect | 1.13 | Not Started |
 | 2.2 | AWS Well-Architected Initial Review | 1 week | Cloud Architect | 2.1 | Not Started |
 | 2.3 | Database Design | 2 weeks | Database Architect | 2.1 | Not Started |
 | 2.4 | API Design | 2 weeks | Backend Lead | 2.1 | Not Started |
+| 2.5 | UI/UX Design | 3 weeks | UX Designer | 1.13 | Not Started |
+| 2.6 | CMS Design | 2 weeks | Solution Architect | 2.1, 2.5 | Not Started |
+| 2.7 | Security Design (Standard-Driven) | 2 weeks | Security Specialist, Technical Lead | 2.1, 1.10 | Not Started |
+| 2.8 | Authentication System Design | 2 weeks | Backend Lead, Security Specialist | 2.1, 2.7 | Not Started |
+| 2.9 | Session Management Design | 1 week | Backend Lead | 2.8 | Not Started |
+| 2.10 | Access Control Design | 1 week | Backend Lead | 2.8 | Not Started |
+| 2.11 | Error Handling & Logging Design | 1 week | Backend Lead | 2.1 | Not Started |
+| 2.12 | Cloud Infrastructure Design (AWS Well-Architected aligned) | 2 weeks | Cloud Architect | 2.1, 2.2 | Not Started |
+| 2.13 | Integration Design | 2 weeks | Integration Specialist | 2.1, 2.4 | Not Started |
+| 2.14 | Security Design Review | 1 week | Security Specialist, Technical Lead | 2.3-2.13 | Not Started |
+| 2.15 | Design Review & Approval | 1 week | Technical Director | 2.1-2.14 | Not Started |2 weeks | Backend Lead | 2.1 | Not Started |
 | 2.5 | UI/UX Design | 3 weeks | UX Designer | 1.11 | Not Started |
 | 2.6 | CMS Design | 2 weeks | Solution Architect | 2.1, 2.5 | Not Started |
 | 2.7 | Security Design (Enhanced) | 2 weeks | Security Champion, Security Specialist | 2.1, 1.8 | Not Started |
@@ -243,67 +253,42 @@
 | AWS CloudTrail | API logging | All regions, encrypted | Security | Security Specialist |
 | AWS Security Hub | Security findings | All standards enabled | Security | Security Champion |
 
-## 13. Security Workbook Implementation (NEW)
+## 13. Security Standards Implementation (Updated)
 
-### Security Champion Responsibilities
+### Distributed Security Responsibilities
 
-| Responsibility | Description | Timing | Deliverables |
-|----------------|-------------|--------|-------------|
-| Initial Assessment | Review project scope against security requirements | Project Start | Initial risk assessment |
-| Threat Modeling | Identify potential threats and mitigations | Analysis Phase | Threat model document |
-| Security Requirements | Define security requirements based on Security Workbook | Analysis Phase | Security requirements document |
-| Security Toolchain | Set up security tools in CI/CD | Development Setup | Toolchain documentation |
-| SAST Integration | Static analysis security testing | Continuous | SAST reports |
-| Dependency Scanning | Identify vulnerable dependencies | Weekly | Vulnerability reports |
-| Security Reviews | Review code for security issues | Per Sprint | Security review reports |
-| DAST & Pen Testing | Dynamic application security testing | Testing Phase | Penetration test report |
-| Security Verification | Verify security controls in production | Deployment Phase | Security verification report |
-| Knowledge Transfer | Train team on security practices | Ongoing | Training materials |
-| Workbook Compliance | Track compliance with Security Workbook items | All Phases | Compliance dashboard |
+Since there is no dedicated Security Champion role, security responsibilities will be distributed across the team as follows:
 
-### Security Workbook Categories and Implementation Plan
+| Role | Security Responsibilities |
+|------|---------------------------|
+| Security Specialist | - Lead threat modeling sessions<br>- Define security architecture requirements<br>- Conduct penetration testing<br>- Provide security expertise and guidance |
+| Solution Architect | - Ensure architecture meets security standards<br>- Design secure infrastructure<br>- Validate security patterns and approaches |
+| Technical Lead | - Own overall security compliance tracking<br>- Enforce secure coding standards<br>- Coordinate security reviews during development |
+| DevOps Engineer | - Implement secure CI/CD pipelines<br>- Configure security scanning tools<br>- Manage secure deployment processes |
+| QA Lead | - Develop security testing plans<br>- Coordinate security testing execution<br>- Validate security requirements are tested |
+| Backend Developers | - Implement authentication & authorization controls<br>- Secure data access and processing<br>- Follow input validation requirements |
+| Frontend Developers | - Implement client-side security controls<br>- Secure UI components against XSS<br>- Follow secure coding guidelines |
+| Project Manager | - Track security standards compliance<br>- Ensure security tasks are scheduled appropriately<br>- Report on security status to stakeholders |
+
+### Security Standards Categories and Implementation Plan
 
 | Category | # of Requirements | Verification Method | Implementation Phase | Owner |
 |----------|-------------------|---------------------|----------------------|-------|
-| Architecture | 6 | Architecture review | Analysis & Design | Solution Architect, Security Champion |
-| Authentication | 26 | Code review, Pen testing | Design & Development | Security Developer, Security Champion |
-| Session Management | 8 | Code review, Pen testing | Development | Backend Developers, Security Champion |
-| Access Control | 8 | Code review, Security testing | Development | Backend Developers, Security Champion |
-| Malicious Input Handling | 19 | SAST, DAST, Code review | Development | All Developers, Security Champion |
-| Cryptography | 5 | Code review, Security testing | Design & Development | Security Developer, Security Champion |
-| Error Handling & Logging | 8 | Code review, Log analysis | Development | Backend Developers, Security Champion |
-| Data Protection | 6 | Code review, Security testing | Development | All Developers, Security Champion |
-| Communications Security | 8 | Configuration review, Pen testing | Design & Development | Network Engineer, Security Champion |
-| HTTP Security | 7 | DAST, Configuration review | Development | DevOps, Security Champion |
-| Files & Resources | 7 | Code review, Security testing | Development | All Developers, Security Champion |
-| Mobile | 6 | Mobile app testing | Development | Mobile Developers, Security Champion |
-| Web Services | 6 | API testing, DAST | Development | Backend Developers, Security Champion |
-| Configuration | 4 | Configuration review | Development & Deployment | DevOps, Security Champion |
-| Embedded Devices (IoT) | 11 | Hardware testing, Firmware analysis | Hardware Design & Development | Embedded Developers, Security Champion |
-
-### Security Workbook Implementation Schedule
-
-| Sprint | Focus Area | Deliverables | Validation |
-|--------|------------|--------------|------------|
-| Sprint 0 | Initial assessment, Architecture | Gap analysis, Architecture compliance plan | Architecture review |
-| Sprint 1-2 | Authentication, Communications Security | Auth framework design, TLS configuration | Design review |
-| Sprint 3-4 | Access Control, Session Management | RBAC implementation, Session handling code | Code review |
-| Sprint 5-6 | Input Validation, Cryptography | Input sanitization libraries, Crypto modules | SAST scan |
-| Sprint 7-8 | Error Handling, Data Protection | Logging framework, Data protection controls | Code review |
-| Sprint 9-10 | Files & Resources, HTTP Security | Upload handling, HTTP security headers | DAST scan |
-| Sprint 11-12 | Web Services, Configuration | API security controls, Secure configurations | API testing |
-| Sprint 13-14 | Final security review | Full security compliance report | Penetration testing |
-
-### Security Review Checkpoints
-
-| Checkpoint | Project Phase | Activities | Participants | Exit Criteria |
-|------------|--------------|-----------|--------------|---------------|
-| Initial Security Assessment | Analysis | - Threat modeling<br>- Security Workbook baseline<br>- Security requirements | - Security Champion<br>- Business Analyst<br>- Architect | - Approved threat model<br>- Security requirements documented<br>- Initial Workbook compliance report |
-| Design Security Review | Design | - Review security architecture<br>- Security controls design<br>- Authentication & cryptography review | - Security Champion<br>- Architect<br>- Security Specialist | - Security design document<br>- Approved security controls<br>- Design complies with Workbook requirements |
-| Sprint Security Reviews | Development | - Code review<br>- SAST review<br>- Dependency scanning<br>- Workbook compliance checks | - Security Champion<br>- Developers | - No high/critical findings<br>- Vulnerabilities addressed<br>- Security Workbook items implemented |
-| Mid-Project Security Review | Mid-Development | - Comprehensive security assessment<br>- Controls implementation check<br>- Workbook compliance verification | - Security Champion<br>- Project Manager<br>- Technical Lead | - Security assessment report<br>- Remediation plan<br>- Compliance status report |
-| Pre-Production Security Review | Testing | - Penetration testing<br>- Final security assessment<br>- Full Workbook verification | - Security Champion<br>- Security Specialist<br>- Project Manager | - Penetration test report<br>- No critical/high vulnerabilities<br>- 100% critical Workbook items addressed |
-| Production Security Verification | Deployment | - Production security scanning<br>- Security controls verification<br>- Final compliance audit | - Security Champion<br>- DevOps<br>- Security Specialist | - Production security report<br>- Sign-off by Security Champion<br>- Compliance documentation |
+| Architecture | 6 | Architecture review | Analysis & Design | Solution Architect |
+| Authentication | 26 | Code review, Pen testing | Design & Development | Security Specialist, Backend Developers |
+| Session Management | 8 | Code review, Pen testing | Development | Backend Developers |
+| Access Control | 8 | Code review, Security testing | Development | Backend Developers |
+| Malicious Input Handling | 19 | SAST, DAST, Code review | Development | All Developers |
+| Cryptography | 5 | Code review, Security testing | Design & Development | Security Specialist, Backend Developers |
+| Error Handling & Logging | 8 | Code review, Log analysis | Development | Backend Developers |
+| Data Protection | 6 | Code review, Security testing | Development | All Developers |
+| Communications Security | 8 | Configuration review, Pen testing | Design & Development | Network Engineer |
+| HTTP Security | 7 | DAST, Configuration review | Development | DevOps Engineer |
+| Files & Resources | 7 | Code review, Security testing | Development | All Developers |
+| Mobile | 6 | Mobile app testing | Development | Mobile Developers |
+| Web Services | 6 | API testing, DAST | Development | Backend Developers |
+| Configuration | 4 | Configuration review | Development & Deployment | DevOps Engineer |
+| Embedded Devices (IoT) | 11 | Hardware testing, Firmware analysis | Hardware Design & Development | Embedded Developers |
 
 ## 14. Integration of Security Workbook & AWS Well-Architected Framework
 
