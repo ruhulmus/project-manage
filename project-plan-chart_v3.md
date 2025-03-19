@@ -1,4 +1,19 @@
-# Web System Replacement
+## 11. AWS & Cloud Infrastructure Plan
+
+### AWS Services to be Used
+
+| AWS Service | Purpose | Configuration | Owner |
+|-------------|---------|--------------|-------|
+| Amazon EC2 | Application servers | Auto-scaling group, t3.medium | Cloud Engineer |
+| Amazon RDS | Database | Multi-AZ MySQL, db.m5.large | Database Admin |
+| Amazon S3 | Static content, backups | Standard storage class | Cloud Engineer |
+| Amazon CloudFront | Content delivery | Global distribution | Cloud Engineer |
+| AWS WAF | Web application firewall | Standard protection set | Security Specialist |
+| Amazon Route 53 | DNS management | Health checks, failover | DevOps Engineer |
+| Amazon CloudWatch | Monitoring and alerting | Custom dashboards, alarms | DevOps Engineer |
+| AWS Lambda | Serverless functions | Event-driven processing | Backend Developer |
+| Amazon ElastiCache | Session management | Redis cluster | Backend Developer |
+| AWS Certificate Manager | SSL certificates | Auto-# Web System Replacement
 ## Project Plan Chart & Timeline
 
 ### Project Overview
@@ -24,20 +39,26 @@
 ├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
 │ 2. Design     │    │████│    │    │    │    │    │    │    │    │    │    │Not Started│
 ├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
-│ 3. Development│    │    │████│████│████│████│████│    │    │    │    │    │Not Started│
+│ 3. Development│    │    │████│████│████│████│████│████│    │    │    │    │Not Started│
 ├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
-│ 4. Testing    │    │    │    │████│████│████│████│████│    │    │    │    │Not Started│
-│  (Parallel)   │    │    │    │ ↑  │ ↑  │ ↑  │ ↑  │ ↑  │    │    │    │    │          │
+│ 4. Testing    │    │    │    │████│████│████│████│████│████│    │    │    │Not Started│
+│  (Parallel)   │    │    │    │ ↑  │ ↑  │ ↑  │ ↑  │ ↑  │ ↑  │    │    │    │          │
 ├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
-│ 5. Deployment │    │    │    │    │    │    │    │    │████│████│    │    │Not Started│
+│ 5. Deployment │    │    │    │████│████│████│████│████│████│████│    │    │Not Started│
+│  (Test → Prod)│    │    │    │Test│Test│Test│Test│Test│Prod│Prod│    │    │          │
 ├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
 │ 6. Handover   │    │    │    │    │    │    │    │    │    │    │████│    │Not Started│
 ├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
 │ Contingency   │    │    │    │    │    │    │    │    │    │    │    │████│Not Started│
 ├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
 │ Project Mgmt  │████│████│████│████│████│████│████│████│████│████│████│████│Not Started│
+├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
+│ Security Stds │ ▒▒ │ ▒▒ │████│████│████│████│████│████│████│ ▒▒ │    │    │Not Started│
+├───────────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼───────────┤
+│ AWS Well-Arch │ ▒▒ │ ▒▒ │ ▒▒ │████│    │████│    │████│    │ ▒▒ │    │    │Not Started│
 └───────────────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴───────────┘
 ```
+Legend: ████ Full focus period  ▒▒ Review/Planning period
 
 **Note**: Testing runs parallel to development starting in Month 4, as we follow an Agile sprint approach where each sprint includes development and testing phases.
 
@@ -47,14 +68,14 @@
 |----|-----------|-------------|--------|--------------|
 | M1 | Project Kickoff | Week 1 | Not Started | Contract signing |
 | M2 | Requirements Approval | Week 4 | Not Started | M1 |
-| M3 | Design Approval | Week 8 | Not Started | M2 |
-| M4 | Sprint 1 Complete | Week 10 | Not Started | M3 |
-| M5 | Sprint 3 Complete | Week 14 | Not Started | M4 |
-| M6 | AWS Well-Architected Review | Week 16 | Not Started | M5 |
-| M7 | Sprint 6 Complete | Week 20 | Not Started | M5 |
-| M8 | Development Complete | Week 30 | Not Started | M7 |
-| M9 | System Testing Complete | Week 34 | Not Started | M8 |
-| M10 | Security Standards Compliance Verification | Week 36 | Not Started | M9 |
+| M3 | Design Approval & Security Standards Baseline | Week 8 | Not Started | M2 |
+| M4 | Test Environment Deployment | Week 12 | Not Started | M3 |
+| M5 | AWS Well-Architected Initial Review | Week 16 | Not Started | M4 |
+| M6 | Security Standards Mid-Project Assessment | Week 20 | Not Started | M4 |
+| M7 | AWS Well-Architected Progress Review | Week 24 | Not Started | M5 |
+| M8 | Development & Test Environment Complete | Week 30 | Not Started | M7 |
+| M9 | Security Standards Compliance Verification | Week 34 | Not Started | M8 |
+| M10 | AWS Well-Architected Final Review | Week 36 | Not Started | M8 |
 | M11 | Production Deployment | Week 40 | Not Started | M9, M10 |
 | M12 | User Training Complete | Week 44 | Not Started | M11 |
 | M13 | Project Closure | Week 48 | Not Started | M12 |
@@ -90,7 +111,7 @@
 | 2.9 | Integration Design | 2 weeks | Integration Specialist | 2.1, 2.3 | Not Started |
 | 2.10 | Design Review & Approval | 1 week | Technical Director | 2.1-2.9 | Not Started |
 
-### Phase 3: Development (Weeks 17-32)
+### Phase 3: Development (Weeks 9-32)
 
 | ID | Task | Duration | Owner | Predecessors | Status |
 |----|------|----------|-------|--------------|--------|
@@ -102,47 +123,64 @@
 | 3.6 | Frontend Components | 6 weeks | Frontend Developers | 3.1, 2.4 | Not Started |
 | 3.7 | CMS Implementation | 4 weeks | CMS Developer | 3.3, 2.5 | Not Started |
 | 3.8 | User Authentication & Security | 2 weeks | Security Developer | 3.3, 2.6 | Not Started |
-| 3.9 | Security Standards Implementation | 4 weeks | Backend & Frontend Developers | 3.3, 3.8 | Not Started |
-| 3.10 | Cloud Infrastructure Setup | 3 weeks | Cloud Engineer | 3.1, 2.7 | Not Started |
-| 3.11 | Monitoring Implementation | 2 weeks | DevOps Engineer | 3.10 | Not Started |
-| 3.12 | Development Integration & Testing | 3 weeks | Development Team | 3.2-3.11 | Not Started |
-| 3.13 | Development Completion Review | 1 week | Technical Lead | 3.12 | Not Started |
+| 3.9 | Security Standards Implementation - Authentication | 3 weeks | Backend Developers | 3.8 | Not Started |
+| 3.10 | Security Standards Implementation - Access Control | 2 weeks | Backend Developers | 3.9 | Not Started |
+| 3.11 | Security Standards Implementation - Input Validation | 2 weeks | All Developers | 3.10 | Not Started |
+| 3.12 | Security Standards Implementation - Data Protection | 2 weeks | Backend Developers | 3.11 | Not Started |
+| 3.13 | Cloud Infrastructure Setup | 3 weeks | Cloud Engineer | 3.1, 2.7 | Not Started |
+| 3.14 | AWS Well-Architected Security Implementation | 2 weeks | Cloud Engineer, Security Specialist | 3.13 | Not Started |
+| 3.15 | AWS Well-Architected Reliability Implementation | 2 weeks | Cloud Engineer | 3.14 | Not Started |
+| 3.16 | Monitoring Implementation | 2 weeks | DevOps Engineer | 3.13 | Not Started |
+| 3.17 | Development Integration & Testing | 3 weeks | Development Team | 3.2-3.16 | Not Started |
+| 3.18 | Security Standards Mid-Project Assessment | 1 week | Security Specialist, Technical Lead | 3.17 | Not Started |
+| 3.19 | Development Completion Review | 1 week | Technical Lead | 3.18 | Not Started |
 
-### Phase 4: Testing & QA (Weeks 33-40)
-
-| ID | Task | Duration | Owner | Predecessors | Status |
-|----|------|----------|-------|--------------|--------|
-| 4.1 | Test Environment Setup | 1 week | DevOps Engineer | 3.13 | Not Started |
-| 4.2 | Test Plan Development | 1 week | QA Lead | 3.13 | Not Started |
-| 4.3 | Functional Testing | 3 weeks | QA Team | 4.1, 4.2 | Not Started |
-| 4.4 | Integration Testing | 2 weeks | QA Team | 4.3 | Not Started |
-| 4.5 | Performance Testing | 2 weeks | Performance Engineer | 4.3 | Not Started |
-| 4.6 | Security Testing | 2 weeks | Security Tester | 4.3 | Not Started |
-| 4.7 | Security Standards Compliance Testing | 2 weeks | Security Specialist | 4.6 | Not Started |
-| 4.8 | Bug Fixes & Regression Testing | 3 weeks | Development Team | 4.3, 4.4, 4.5, 4.6, 4.7 | Not Started |
-| 4.9 | User Acceptance Testing | 2 weeks | Business Users | 4.8 | Not Started |
-| 4.10 | UAT Bug Fixes | 1 week | Development Team | 4.9 | Not Started |
-| 4.11 | Testing Completion Review | 1 week | QA Lead | 4.10 | Not Started |
-
-### Phase 5: Migration & Deployment (Weeks 41-52)
+### Phase 4: Testing & QA (Weeks 16-40)
 
 | ID | Task | Duration | Owner | Predecessors | Status |
 |----|------|----------|-------|--------------|--------|
-| 5.1 | Data Migration Planning | 2 weeks | Data Migration Specialist | 4.11 | Not Started |
-| 5.2 | Data Migration Scripts | 2 weeks | Data Migration Developer | 5.1 | Not Started |
-| 5.3 | Migration Testing | 2 weeks | Data Migration Team | 5.2 | Not Started |
-| 5.4 | Production Environment Setup | 2 weeks | DevOps Engineer | 4.11 | Not Started |
-| 5.5 | AWS Well-Architected Final Review | 1 week | Cloud Architect | 5.4 | Not Started |
-| 5.6 | Deployment Planning | 1 week | Release Manager | 5.3, 5.4, 5.5 | Not Started |
-| 5.7 | User Training Materials | 2 weeks | Training Specialist | 4.11 | Not Started |
-| 5.8 | User Training Sessions | 2 weeks | Training Specialist | 5.7 | Not Started |
-| 5.9 | Final Documentation | 3 weeks | Technical Writer | 4.11 | Not Started |
-| 5.10 | Pre-deployment Review | 1 week | Project Manager | 5.3, 5.4, 5.5, 5.7, 5.8, 5.9 | Not Started |
-| 5.11 | Production Deployment | 1 week | DevOps Team | 5.10 | Not Started |
-| 5.12 | Post-deployment Validation | 1 week | QA Team | 5.11 | Not Started |
-| 5.13 | Knowledge Transfer | 2 weeks | Development Team | 5.11 | Not Started |
-| 5.14 | Post-implementation Support | 2 weeks | Support Team | 5.12 | Not Started |
-| 5.15 | Project Closure | 1 week | Project Manager | 5.14 | Not Started |
+| 4.1 | Test Environment Setup | 2 weeks | DevOps Engineer | 3.13 | Not Started |
+| 4.2 | Test Plan Development (Including Security Standards) | 1 week | QA Lead, Security Specialist | 3.8 | Not Started |
+| 4.3 | Initial Functional Testing | 3 weeks | QA Team | 4.1, 4.2 | Not Started |
+| 4.4 | AWS Well-Architected Initial Review | 1 week | Cloud Architect | 4.1 | Not Started |
+| 4.5 | Integration Testing | 3 weeks | QA Team | 4.3 | Not Started |
+| 4.6 | Performance Testing | 2 weeks | Performance Engineer | 4.3 | Not Started |
+| 4.7 | Security Testing - Authentication & Access Control | 2 weeks | Security Tester | 3.10, 4.3 | Not Started |
+| 4.8 | Security Testing - Input Validation & Injection | 2 weeks | Security Tester | 3.11, 4.3 | Not Started |
+| 4.9 | Security Testing - Data Protection & Cryptography | 2 weeks | Security Tester | 3.12, 4.3 | Not Started |
+| 4.10 | AWS Well-Architected Mid-Project Review | 1 week | Cloud Architect | 4.4, 3.15 | Not Started |
+| 4.11 | Continuous Bug Fixes & Regression Testing | Ongoing | Development Team | 4.3-4.9 | Not Started |
+| 4.12 | User Acceptance Testing (Test Environment) | 3 weeks | Business Users | 4.11 | Not Started |
+| 4.13 | AWS Well-Architected Final Review | 1 week | Cloud Architect | 4.10 | Not Started |
+| 4.14 | Security Standards Compliance Verification | 2 weeks | Security Specialist | 4.7, 4.8, 4.9 | Not Started |
+| 4.15 | Final Bug Fixes | 2 weeks | Development Team | 4.12, 4.14 | Not Started |
+| 4.16 | Testing Completion Review | 1 week | QA Lead | 4.15 | Not Started |
+
+### Phase 5: Migration & Deployment (Weeks 16-48)
+
+| ID | Task | Duration | Owner | Predecessors | Status |
+|----|------|----------|-------|--------------|--------|
+| 5.1 | Test Environment Deployment Planning | 1 week | DevOps Engineer | 3.13 | Not Started |
+| 5.2 | Test Environment Deployment | 2 weeks | DevOps Team | 5.1 | Not Started |
+| 5.3 | Test Environment Security Validation | 1 week | Security Specialist | 5.2 | Not Started |
+| 5.4 | Iterative Deployments to Test Environment | Ongoing | DevOps Team | 5.3 | Not Started |
+| 5.5 | Data Migration Planning | 2 weeks | Data Migration Specialist | 4.5 | Not Started |
+| 5.6 | Data Migration Scripts Development | 3 weeks | Data Migration Developer | 5.5 | Not Started |
+| 5.7 | Data Migration Testing (Test Environment) | 2 weeks | Data Migration Team | 5.6, 5.4 | Not Started |
+| 5.8 | Production Environment Planning | 2 weeks | DevOps Engineer | 4.16 | Not Started |
+| 5.9 | Production Environment Setup | 2 weeks | DevOps Engineer | 5.8 | Not Started |
+| 5.10 | Security Standards Production Review | 1 week | Security Specialist | 5.9 | Not Started |
+| 5.11 | AWS Well-Architected Production Review | 1 week | Cloud Architect | 5.9 | Not Started |
+| 5.12 | Deployment Planning | 1 week | Release Manager | 5.7, 5.10, 5.11 | Not Started |
+| 5.13 | User Training Materials | 2 weeks | Training Specialist | 4.16 | Not Started |
+| 5.14 | User Training Sessions | 2 weeks | Training Specialist | 5.13 | Not Started |
+| 5.15 | Final Documentation | 3 weeks | Technical Writer | 4.16 | Not Started |
+| 5.16 | Pre-deployment Review | 1 week | Project Manager | 5.12-5.15 | Not Started |
+| 5.17 | Production Deployment | 1 week | DevOps Team | 5.16 | Not Started |
+| 5.18 | Post-deployment Validation | 1 week | QA Team | 5.17 | Not Started |
+| 5.19 | Knowledge Transfer | 2 weeks | Development Team | 5.18 | Not Started |
+| 5.20 | Post-implementation Support | 2 weeks | Support Team | 5.19 | Not Started |
+| 5.21 | Project Closure | 1 week | Project Manager | 5.20 | Not Started |
 
 ## 4. Resource Allocation Chart
 
@@ -313,20 +351,32 @@ Training Specialist    |   0|   0|   0|   0|   0|   0|   0|  25|  50| 100| 100| 
 
 ## 12. Security Standards Implementation
 
-| Category | Implementation Approach | Validation Method | Phase |
-|----------|-------------------------|------------------|-------|
-| Architecture | Follow secure architecture patterns | Architecture review | Design |
-| Authentication | Implement all 26 authentication requirements | Security testing | Development & Testing |
-| Session Management | Implement secure session handling | Code review, Pen testing | Development & Testing |
-| Access Control | Role-based access control | Security testing | Development & Testing |
-| Input Validation | Server & client-side validation | SAST, DAST | Development & Testing |
-| Cryptography | Follow cryptography standards | Security review | Development |
-| Error Handling | Secure error handling implementation | Code review | Development |
-| Data Protection | Encrypt sensitive data | Security testing | Development & Testing |
-| Communications | TLS implementation | Configuration review | Development |
-| HTTP Security | Secure HTTP headers | Security testing | Development & Testing |
-| File Handling | Secure file upload handling | Security testing | Development & Testing |
-| Web Services | API security controls | API testing | Development & Testing |
+| Category | Implementation Approach | Implementation Timing | Validation Method | Owner |
+|----------|-------------------------|-----------------------|------------------|-------|
+| Architecture | Follow secure architecture patterns | M2-M3 (Design) | Architecture review | Solution Architect |
+| Authentication | Implement all 26 authentication requirements | M3-M5 (Development) | Security testing | Backend Developers |
+| Session Management | Implement secure session handling | M4-M6 (Development) | Code review, Pen testing | Backend Developers |
+| Access Control | Role-based access control implementation | M4-M6 (Development) | Security testing | Backend Developers |
+| Input Validation | Server & client-side validation | M5-M7 (Development) | SAST, DAST | All Developers |
+| Cryptography | Follow cryptography standards | M5-M7 (Development) | Security review | Backend Developers |
+| Error Handling | Secure error handling implementation | M4-M8 (Development) | Code review | Backend Developers |
+| Data Protection | Encrypt sensitive data | M5-M7 (Development) | Security testing | Backend Developers |
+| Communications | TLS implementation | M3-M5 (Development) | Configuration review | DevOps Engineer |
+| HTTP Security | Secure HTTP headers | M6-M8 (Development) | Security testing | Frontend Developers |
+| File Handling | Secure file upload handling | M5-M7 (Development) | Security testing | Backend Developers |
+| Web Services | API security controls | M4-M6 (Development) | API testing | Backend Developers |
+
+### Security Standards Implementation Milestones
+
+| Milestone | Timing | Activities | Validation | 
+|-----------|--------|------------|------------|
+| Security Standards Baseline | M3 | - Review all 126+ standards<br>- Map to project requirements<br>- Prioritize implementation | Technical Lead sign-off |
+| Authentication & Access Control Implementation | M5 | - Implement all authentication standards<br>- Implement access control standards<br>- Unit testing | Security testing |
+| Data Protection & Validation Implementation | M6 | - Input validation controls<br>- Data encryption<br>- Secure communications | Code review, SAST |
+| Mid-Project Security Assessment | M6 | - Review implementation progress<br>- Identify gaps<br>- Adjust implementation plan | Security testing report |
+| Final Security Implementation | M8 | - Complete all security standards<br>- Fix any identified gaps<br>- Final security code review | SAST, code review |
+| Security Verification Testing | M9 | - Comprehensive security testing<br>- Penetration testing<br>- Security standards validation | Penetration test report |
+| Production Security Validation | M10-M11 | - Production environment security scanning<br>- Configuration validation<br>- Final security signoff | Security compliance report |
 
 ## 13. Approval and Sign-off
 
