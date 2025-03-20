@@ -1,0 +1,54 @@
+flowchart TD
+    classDef milestone fill:#f96,stroke:#333,stroke-width:2px
+    classDef critical fill:#f66,stroke:#333,stroke-width:2px
+    classDef standard fill:#9cf,stroke:#333
+    classDef parallel fill:#9fc,stroke:#333
+
+    %% Environment Setup Track
+    A[5.1 Test Environment\nDeployment Planning] -->|1 week| B[5.2 Test Environment\nDeployment]
+    B -->|2 weeks| C[5.3 Test Environment\nSecurity Validation]
+    C -->|ongoing| D[5.4 Iterative Deployments\nto Test Environment]
+    B --> E[5.5 Deployment\nRunbook Creation]
+    
+    %% Data Migration Track
+    F[5.6 Data Migration\nPlanning] -->|2 weeks| G[5.7 Data Migration\nScripts Development]
+    G -->|3 weeks| H[5.8 Data Migration\nTesting]
+    
+    %% Production Setup Track
+    I[4.20 Testing\nCompletion Review] --> J[5.9 Production\nEnvironment Planning]
+    J -->|2 weeks| K[5.10 Pre-Production\nStaging Environment Setup]
+    K -->|2 weeks| L[5.11 Production\nEnvironment Setup]
+    
+    %% Final Checks
+    L --> M[5.12 Production\nDeployment Plan]
+    L --> N[5.13 Security Standards\nProduction Review]
+    L --> O[5.14 AWS Well-Architected\nProduction Review]
+    
+    %% Go/No-Go Decision
+    E & M & N & O & P[4.19 UAT\nSign-off] --> Q{5.15 Go/No-Go\nDecision Meeting}
+    class Q milestone
+    
+    %% Training and Documentation
+    I --> R[5.16 User Training\nMaterials]
+    R -->|2 weeks| S[5.17 User\nTraining Sessions]
+    I --> T[5.18 Final\nDocumentation]
+    
+    %% Final Deployment and Closure
+    Q & S & T --> U[5.19 Production\nDeployment]
+    class U critical
+    
+    U -->|1 week| V[5.20 Post-deployment\nValidation]
+    V -->|2 weeks| W[5.21 Knowledge\nTransfer]
+    W -->|2 weeks| X[5.22 Post-implementation\nSupport]
+    X -->|1 week| Y[5.23 Project\nClosure]
+    class Y critical
+    
+    %% Parallel Tracks
+    D -.-> U
+    H -.-> U
+    
+    %% Styling
+    class A,B,C,E,F,G,H,J,K,L,M,N,O,R,S,T standard
+    class D,H parallel
+    class I,P milestone
+    class V,W,X standard
